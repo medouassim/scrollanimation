@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: cursive;
+    overflow-x: hidden;
+    background-color: #838B87;
+}
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    width: 500px;
+    color: #fff;
+    background-color: #e7a2a2;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+    transform: translateX(400%);
+    transition: transform 0.5s ease;
+}
+
+.content:nth-of-type(even) {
+    transform: translateX(-400%);
+}
+.content.show {
+    transform: translateX(0);
+}
